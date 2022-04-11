@@ -1,1 +1,5 @@
 ipython
+black
+flake8
+pytest
+pytest-flask
