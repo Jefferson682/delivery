@@ -3,3 +3,6 @@ black
 flake8
 pytest
 pytest-flask
+pytest-cov
+ipython
+flask-shell-ipython
