@@ -14,4 +14,5 @@ setup(
     include_package_data=True,
     install_requires=read("requirements.txt"),
     extras_require={"dev": read("requirements-dev.txt")},
+    extras_require={"lint": read("requirements-lint.txt")}
 )
