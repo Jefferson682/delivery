@@ -1,4 +1,3 @@
-from gettext import find
 from setuptools import setup, find_packages
 
 
