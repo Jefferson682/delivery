@@ -2,6 +2,7 @@ black
 flake8
 pytest
 pytest-flask
+pytest-cov
 ipython
 ipdb
 isort
