@@ -1,4 +1,3 @@
-from unicodedata import name
 from flask import Blueprint
 from flask import render_template, request
 
