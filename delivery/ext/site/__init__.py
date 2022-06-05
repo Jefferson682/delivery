@@ -1,4 +1,4 @@
-from .main import bp
+from delivery.ext.site.main import bp
 
 
 def init_app(app):
