@@ -9,3 +9,4 @@ isort
 flask-shell-ipython
 flask-debugtoolbar
 Flask-sqlalchemy
+Flask-Migrate
