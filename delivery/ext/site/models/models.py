@@ -6,11 +6,19 @@ class User(db.Model):
     email = db.Column("email", db.Unicode, unique=True)
     passwd = db.Column("passwd", db.Unicode)
     admin = db.Column("admin", db.Boolean)
+    name = db.Column("name", db.Unicode)
+    
+    def __repr__(self):
+        return self.name
     
 class Category(db.Model):
     __tablename__ = 'categories'
     id = db.Column("id", db.Integer, primary_key=True)
     name = db.Column("name", db.Unicode, unique=True)
+    on_menu = db.Column("on_menu", db.Boolean)
+    
+    def __repr__(self):
+        return self.name
     
 class Store(db.Model):
     __tablename__ = 'stores'
@@ -18,6 +26,7 @@ class Store(db.Model):
     name = db.Column("name", db.Unicode, unique=True)
     user_id = db.Column("user_id", db.Integer, db.ForeignKey("users.id"))
     category_id = db.Column("category_id", db.Integer, db.ForeignKey("categories.id"))
+    active = db.Column("active", db.Boolean, default=True)
     
     users = db.relationship("User", foreign_keys=user_id)
     categories = db.relationship("Category", foreign_keys=category_id)
