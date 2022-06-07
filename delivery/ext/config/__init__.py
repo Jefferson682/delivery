@@ -1,3 +1,7 @@
 def init_app(app):
     app.config['SECRET_KEY'] = "xUBB0WbP1xclj8y7wQsGyZmKRaZNnXR2"
-    return app
+    app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///delivery.db'
+    
+    if app.debug:
+        app.config["DEBUG_TB_TEMPLATE_EDITOR_ENABLE"] = True
+        app.config['DEBUG_TB_PROFILER_ENABLE'] = True
