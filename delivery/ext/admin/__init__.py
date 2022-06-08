@@ -1,7 +1,8 @@
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
+
 from delivery.ext.db import db
-from delivery.ext.site.models.models import Category, Address, Item, Store
+from delivery.ext.site.models.models import Address, Category, Item, Store
 
 admin = Admin()
 

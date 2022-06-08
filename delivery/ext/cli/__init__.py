@@ -1,5 +1,6 @@
 from delivery.ext.db import db
-from delivery.ext.site.models import models # noqa
+from delivery.ext.site.models import models  # noqa
+
 
 def init_app(app):
     @app.cli.command()
