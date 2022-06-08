@@ -6,4 +6,5 @@
 .vscode/
 *.db
 
-*.secrets.*
+.secrets.toml
+.env
