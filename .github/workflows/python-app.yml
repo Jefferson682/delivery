@@ -25,9 +25,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -e .['dev'] --upgrade --no-cache
 
-    - name: Install dependencies
-      run: |
-        make init_db
+    # - name: Install dependencies
+    #   run: |
+    #     make init_db
 
     - name: Lint with flake8
       run: |
