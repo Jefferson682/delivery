@@ -22,5 +22,9 @@ init_db:
 test:
 	FLASK_ENV=tets pytest ./tests -v --cov="delivery"
 
+format:
+	isort **/*
+	black -l 79 **/*.py
+
 run:
-	cd ./delivery/ && flask run
+	FLASK_APP=delivery/app.py flask run

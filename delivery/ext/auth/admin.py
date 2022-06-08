@@ -1,8 +1,10 @@
-from flask_admin.contrib.sqla import ModelView
+from flask import flash
 from flask_admin.actions import action
+from flask_admin.contrib.sqla import ModelView
+
 from delivery.ext.db import db
 from delivery.ext.site.models.models import User
-from flask import flash
+
 
 class UserAdmin(ModelView):
     """Interface ModelView class"""

@@ -1,6 +1,6 @@
-from delivery.ext.db import db
 from delivery.ext.admin import admin as main_admin
 from delivery.ext.auth.admin import UserAdmin
+from delivery.ext.db import db
 from delivery.ext.site.models.models import User
 
 

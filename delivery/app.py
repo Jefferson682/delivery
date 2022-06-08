@@ -1,5 +1,6 @@
 from flask import Flask
-from .ext import site, toolbar, config, db, cli, migrate, hooks, auth, admin
+
+from .ext import admin, auth, cli, config, db, hooks, migrate, site, toolbar
 
 
 def create_app():
@@ -12,6 +13,6 @@ def create_app():
     cli.init_app(app)
     toolbar.init_app(app)
     site.init_app(app)
-    
+
     hooks.init_app(app)
     return app
