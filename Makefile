@@ -20,7 +20,7 @@ init_db:
 	FLASK_APP=delivery/app.py flask db upgrade
 
 test:
-	pytest ./tests -v --cov="delivery"
+	FLASK_ENV=tets pytest ./tests -v --cov="delivery"
 
 run:
 	cd ./delivery/ && flask run
