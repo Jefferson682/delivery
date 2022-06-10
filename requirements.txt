@@ -3,3 +3,4 @@ Flask-sqlalchemy
 Flask-Migrate
 Flask-Admin
 dynaconf
+Flask-wtf

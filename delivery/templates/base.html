@@ -58,10 +58,10 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-primary">
+                <a class="button is-primary" href="{{ url_for('site.signup') }}">
                   <strong>Criar Conta</strong>
                 </a>
-                <a class="button is-light">
+                <a class="button is-light" href="{{ url_for('site.signin') }}">
                   Entrar
                 </a>
               </div>
@@ -84,6 +84,7 @@
     {% endblock hero %}
   <section class="section">
     <div class="container">
+      {% block website_content%}
       <div class="columns">
         {% for item in [1,2,3,4] %}
         <div class="column">
@@ -118,7 +119,6 @@
         </div>
         {% endfor %}
       </div>
-      {% block website_content %}
 
       {% endblock %}
     </div>
